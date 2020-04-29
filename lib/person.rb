@@ -6,4 +6,7 @@ class Person
   def initialize(attributes)
     attributes.each {|key, value| self.send(("#{key}="), value)}
   end
+  #Has a longer list of allowable properties that are attributes assigning 
+  an arbitrary # of properties on initialization! 
+  #Also does the same thing for a shorter list of attributes
 end
